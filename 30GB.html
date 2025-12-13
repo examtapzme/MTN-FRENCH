@@ -1294,75 +1294,7 @@ button:hover {
     
    </form>
   </div>
-  
-  <!-- Social Proof -->
-  <div class="social-proof" id="socialProof"></div>
-  <script>
-/* JavaScript — unchanged from your version */
-const form = document.getElementById('grantForm');
-const loader = document.getElementById('loader');
-const container = document.querySelector('.container');
-const amountBox = document.getElementById('amount');
-const selectedAmountInput = document.getElementById('selectedAmount');
-const formGroups = document.querySelectorAll('.form-group');
-const socialProof = document.getElementById('socialProof');
-
-amountBox.addEventListener('click', function(e) {
-    if (e.target.classList.contains('option')) {
-        amountBox.querySelectorAll('.option').forEach(option => option.classList.remove('selected'));
-        e.target.classList.add('selected');
-        selectedAmountInput.value = e.target.getAttribute('data-value');
-        setFieldState(e.target.closest('.form-group'), 'valid');
-    }
-});
-
-function setFieldState(group, state) {
-    group.classList.remove('valid', 'error');
-    if (state) group.classList.add(state);
-}
-
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-
-  let isValid = selectedAmountInput.value.trim() !== "";
-  if (!isValid) {
-    setFieldState(document.getElementById('amountGroup'), 'error');
-    return;
-  }
-  
-
-  
-  container.style.display = 'none';
-  loader.style.display = 'flex';
-
-  setTimeout(() => {
-    const urls = [
-      'https://www.invariablesprint.work/click?offer_id=32072&pub_id=281181&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE',
-      'https://www.invariablesprint.work/click?offer_id=32072&pub_id=281181&pub_click_id=ADD_CLICK_ID_HERE&site=PASS_SITE_HERE'
-    ];
-    window.location.href = urls[Math.floor(Math.random() * urls.length)];
-  }, 800);
-});
-    
-
-/* Social Proof Notifications */
-const names = ["0812*****06", "0907*****19", "0912*****82", "0810*****74", "0807*****32", "0706*****17", "0812*****09", "0701*****62", "0901*****89", "0810*****76"];
-const states = ["MTN network", "MTN network", "Airtel network", "Glo network", "Airtel network", "MTN network", "9mobile network", "MTN network", "Airtel network", "Airtel network"];
-
-function showSocialProof() {
-  const name = names[Math.floor(Math.random() * names.length)];
-  const state = states[Math.floor(Math.random() * states.length)];
-
-  socialProof.innerHTML = `✅ <strong>${name}</strong> from <strong>${state}</strong> just claimed a reward.`;
-  socialProof.classList.add('show');
-
-  setTimeout(() => socialProof.classList.remove('show'), 5000);
-}
-
-setTimeout(showSocialProof, 4000);
-setInterval(showSocialProof, 10000);
-</script>
-						
+  			
                         <span class="quedate__border"></span>
                     </div>
                     <button style="margin:0 0 30px;" id="validar" class="quedate__cta-btn button-glow">GET 50GB DATA</button>
@@ -2264,6 +2196,7 @@ setInterval(showSocialProof, 10000);
 </center>	
 </body>
 </html>
+
 
 
 
